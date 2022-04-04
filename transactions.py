@@ -1,14 +1,8 @@
 from datetime import datetime
 from typing import Hashable
 
-import pandas as pd
-
 from category import Category
 from enums import TransactionType, CategoryType
-
-t = {'date': ['2022-01-01', '2022-01-02'], 'amount': [-200.00, 350.00], 'title': ['Biedronka', 'Mexicana'],
-     'bank_name': ['MBank', 'Santander']}
-jan_transactions = pd.DataFrame(data=t)
 
 
 class Transaction:
